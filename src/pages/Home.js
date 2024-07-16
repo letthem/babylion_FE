@@ -9,8 +9,7 @@ const Home = () => {
       <HomeContainer>
         <h1>HONGIK LIKELION 🦁</h1>
         <h2>social login</h2>
-
-        <div style={{ display: "inline-block" }}>
+        <div>
           <br />
           <p>다른 사람의 프로필을 보고 싶으신가요?</p>
           <br />
@@ -33,6 +32,9 @@ const HomeContainer = styled.div`
   justify-content: center;
   background-color: black;
 
+  div {
+    display: "inline-block";
+  }
   h1 {
     color: white;
     font-size: 3rem;
