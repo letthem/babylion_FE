@@ -6,7 +6,7 @@ const KakaoLogin = () => {
   const Rest_api_key = process.env.REACT_APP_KAKAO_API_KEY; // REST API KEY
   const redirect_uri = process.env.REACT_APP_KAKAO_REDIRECT_URI; // Redirect URI
   // Oauth 요청 URL
-  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${Rest_api_key}&redirect_uri=${redirect_uri}&response_type=code`;
+  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${Rest_api_key}&redirect_uri=${redirect_uri}&response_type=code&scope=openid`;
 
   // 인가코드 post로 보내드리기
 
