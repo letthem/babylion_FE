@@ -4,7 +4,7 @@ import { axiosInstance } from "../api/api";
 
 const Auth = () => {
   const navigate = useNavigate();
-  const code = new URL(document.location).searchParams.get("code");
+  const code = new URL(window.location.href).searchParams.get("code");
 
   const sendVerified = async () => {
     try {
