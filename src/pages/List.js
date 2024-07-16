@@ -1,16 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
+import ListItem from "../components/ListItem";
 
 const List = () => {
   return (
     <>
       <Navbar />
-      List 페이지입니다!! 프로필 리스트가 뜹니다.
-      {/* 전체 사용자 프로필 정보 get */}
-      {/* 프로필 클릭시 detail하게 get */}
+      <ListWrapper>
+        <ListContainer>
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+          <ListItem />
+        </ListContainer>
+      </ListWrapper>
     </>
   );
 };
 
 export default List;
+
+const ListWrapper = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+`;
+const ListContainer = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+  overflow-y: auto;
+  width: 100%;
+`;
