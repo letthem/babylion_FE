@@ -14,7 +14,7 @@ const List = () => {
 
   const verifyJWT = async () => {
     try {
-      const response = await axiosInstance.get("/auth/verify", {
+      const response = await axiosInstance.get("/auth/kakao/verify", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
         },
