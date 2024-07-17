@@ -2,11 +2,8 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import UserList from "../components/UserList";
-<<<<<<< HEAD
 import { useNavigate } from "react-router";
 import { axiosInstance } from "../api/api";
-=======
->>>>>>> a2b7277 (Feat: list get API 연결)
 
 const List = () => {
   const navigate = useNavigate();
@@ -34,7 +31,6 @@ const List = () => {
   return (
     <>
       <Navbar />
-<<<<<<< HEAD
       {verify && (
         <ListWrapper>
           <ListContainer>
@@ -42,13 +38,6 @@ const List = () => {
           </ListContainer>
         </ListWrapper>
       )}
-=======
-      <ListWrapper>
-        <ListContainer>
-          <UserList />
-        </ListContainer>
-      </ListWrapper>
->>>>>>> a2b7277 (Feat: list get API 연결)
     </>
   );
 };
